@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather app in JS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><i class="fa-solid fa-arrow-left"></i>Weather App</header>
+      <section class="input-part">
+        <p class="info-txt">Please enter a city name</p>
+        <input
+          type="text"
+          placeholder="Enter city name"
+          spellcheck="false"
+          required
+        />
+        <div class="separator"></div>
+        <button>Get device location</button>
+      </section>
+      <section class="weather-part">
+        <img src="cloud.svg" alt="Clouds icon" />
+        <div class="temp">
+          <span class="number">13</span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="weather">Broken Clouds</div>
+      </section>
+    </div>
+  </body>
+</html>
