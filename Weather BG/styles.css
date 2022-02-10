@@ -18,7 +18,7 @@ body {
 
 .app-main {
   width: 50vh;
-  margin: 100px auto;
+  margin: 200px auto;
   background-color: rgba(240, 248, 255, 0.6);
   padding: 20px;
   text-align: center;
@@ -46,12 +46,13 @@ body {
 }
 
 .weather-body {
+  display: none;
   color: #582233;
   padding: 20px;
   line-height: 2rem;
   border-radius: 10px;
   background-color: rgba(240, 248, 255, 0.6);
-  height: 50vh;
+  height: 300px;
 }
 
 .location-details {
