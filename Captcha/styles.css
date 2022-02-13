@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  background: #f5f5f5;
+}
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 450px;
+  background-color: #fff;
+  padding: 20px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 30px;
+  color: #111;
+}
+
+.form-input {
+  margin: 10px 0;
+}
+
+.form-input label,
+.captcha label {
+  display: block;
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #888;
+  font-size: 15px;
+}
+
+.captcha {
+  margin: 15px 0;
+}
+
+.preview {
+  color: #555;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 8px;
+  border: 1px dashed #888;
+  font-family: "monospace";
+}
+
+.preview span {
+  display: inline-block;
+  user-select: none;
+}
+
+.captcha-form {
+  display: flex;
+}
+
+.captcha-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #888;
+}
+
+.captcha-refresh {
+  width: 40px;
+  border: none;
+  outline: none;
+  background: #888;
+  color: #eee;
+}
+
+#login-btn {
+  margin-top: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  background: #4c81ff;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+}
