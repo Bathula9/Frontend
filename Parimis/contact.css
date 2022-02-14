@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+/* p {
+  margin: 5px 0;
+  line-height: 1.7;
+} */
+
+img {
+  max-width: 100%;
+}
+
+/********************* NAVBAR **************************/
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgb(0 0 0/10%), 0 2px 2px rgb(0 0 0/6%),
+    0 0 2px rgb(0 0 0/7%);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #d50032;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-nav-left {
+  text-transform: uppercase;
+  /* push menu closer push to side 1 */
+  flex: 1;
+  margin-left: 20px;
+}
+
+.navbar-nav-right li:first-child a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav-right img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* .navbar-nav-right li:nth-child(2) {
+  margin: 0 5px;
+} */
+
+.navbar-nav-right li {
+  margin: 0 5px;
+}
+
+/*********************** HAMBURGER  ***********/
+
+.hamburger {
+  width: 60px;
+}
+
+/* *********** FORMULAIRE***********/
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  left: 20%;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  margin-top: auto;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+.company-info {
+  background: #d50032;
+}
+
+.company-info h3 {
+  text-align: center;
+  color: #fff;
+}
+
+.contact {
+  background: #f9feff;
+}
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .message,
+.submit-btn {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea,
+.object {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #d50032;
+  color: #fff;
+}
+
+#title .last {
+  width: 70%;
+}
+
+.contact form button {
+  background: #d50032;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background-color: #d50032;
+  color: #000;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+#title {
+  display: inline-block;
+}

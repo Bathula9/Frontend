@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="Hotel logo" />
+          </a>
+        </div>
+        <ul class="navbar-nav-left">
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Restaurant</a></li>
+          <li><a href="#">Spa</a></li>
+          <li><a href="#">Reservations</a></li>
+          <li><a href="#">Qui sommes-nous?</a></li>
+          <li><a href="#">Access</a></li>
+        </ul>
+
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="#">
+              <img src="images/clouds.png" alt="weather" />
+              <span>Book your reservations</span>
+            </a>
+          </li>
+          <li>
+            <input class="search" placeholder="Search..." /><i
+              class="fas fa-search"
+            ></i>
+          </li>
+          <select id="languages" name="languages">
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+          </select>
+        </ul>
+        <!-- HAMBURGER ICON -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ! FORMULAIRE -->
+
+    <div class="container">
+      <div class="wrapper">
+        <div class="company-info">
+          <h3>Rendezvous @ Avenue Montaigne</h3>
+        </div>
+        <div class="contact">
+          <h3>Tel: +33 01 02 03 04 05</h3>
+          <form action="#">
+            <p>
+              <input type="text" placeholder="Email" />
+            </p>
+            <p>
+              <select class="object">
+                <option value="object">Object</option>
+                <option value="spa">Spa</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="rooms">Rooms</option>
+              </select>
+              <!-- <input type="text" placeholder="Object" /> -->
+            </p>
+            <p>
+              <input type="email" placeholder="Confirm your email address" />
+            </p>
+            <p>
+              <input type="text" placeholder="Enter your phone number" />
+            </p>
+            <p>
+              <input type="text" placeholder="First Name" />
+            </p>
+            <p>
+              <select id="title" name="title">
+                <option value="mr">Mr</option>
+                <option value="miss">Miss</option>
+                <option value="mrs">Mrs</option>
+              </select>
+              <input type="text" placeholder="Last Name" class="last" />
+            </p>
+            <p class="message">
+              <label for="">Message</label>
+              <textarea name="message" cols="30" rows="10"></textarea>
+            </p>
+            <p class="submit-btn">
+              <button>Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
