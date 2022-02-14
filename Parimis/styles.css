@@ -189,6 +189,36 @@ img {
   transform: translateY(14px);
 }
 
+/* ******************* SECTION WITH SPA,REST,ROOMS*********************/
+
+.qualities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.qty-header {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 25px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.qty-button {
+  /* border: 1px solid #9dd1ff;
+  border-radius: 10px; */
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  /* transition: background-color 200ms ease-in-out; */
+}
+
 /* **************** 3 parts****************/
 
 .box {
@@ -198,6 +228,7 @@ img {
 .box-inner {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
 }
 
 .box-mail {
@@ -213,9 +244,76 @@ img {
   /* Better to use fractions 1:1 2:1*/
   /* grid-template-columns: 1fr 1fr; */
   grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/****************** MAPS ************/
+
+.maps {
+  margin-bottom: 30px;
+}
+
+.maps-right,
+.maps-left {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.grid-col-2 {
+  display: grid;
+  /* Better to use fractions 1:1 2:1*/
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
+}
+
+.maps-right h2 {
+  font-size: 50px;
+}
+
+.maps-right p,
+label {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/****************** NEWSLETTER ************/
+
+.fas.fa-envelope {
+  color: #fff;
+  font-size: 32px;
+  background: #333;
+  padding: 15px;
+  border-radius: 100%;
+  margin: 0 0 16px 0;
+}
+
+.form-input,
+input {
+  padding: 16px 32px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+.form-input input::placeholder {
+  color: #d1d1d1;
+  font-family: inherit;
+}
+
+.subscribe-btn {
+  padding: 8px 16px;
+  border-radius: 80px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  color: #fff;
+  font-size: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 /****************** COOKIES ************/
@@ -254,11 +352,18 @@ img {
   font-family: inherit;
   text-align: center;
   line-height: 1.2;
+  font-size: 14px;
+}
+
+.btn .apple span,
+.google span {
+  font-size: 20px;
 }
 
 .btn .apple:hover,
 .google:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #d50032;
+  opacity: 0.9;
   color: #fff;
 }
 
@@ -292,9 +397,9 @@ img {
   margin-right: 20px;
 }
 
-.divider {
+/* .divider {
   width: 95%;
   height: 1px;
   background-color: #ccc;
   margin: 40px auto;
-}
+} */
