@@ -73,11 +73,55 @@
       </div>
     </div>
 
+    <!-- section with three qualities -->
+
+    <section class="qualities">
+      <!-- Rooms -->
+      <div class="quality">
+        <img src="icons/icon1.png" alt="Rooms" class="qty-img" />
+        <h2 class="qty-header">Rooms</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem
+          nobis dicta. Aspernatur, assumenda neque!
+        </p>
+        <a href="#" class="qty-button">En savoir plus</a>
+      </div>
+
+      <!-- Spa -->
+      <div class="quality">
+        <img src="icons/icon1.png" alt="" class="qty-img" />
+        <h2 class="qty-header">Spa</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem
+          nobis dicta. Aspernatur, assumenda neque!
+        </p>
+        <a href="#" class="qty-button">En savoir plus</a>
+      </div>
+
+      <!-- Restaurant -->
+      <div class="quality">
+        <img src="icons/icon1.png" alt="" class="qty-img" />
+        <h2 class="qty-header">Restaurant</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem
+          nobis dicta. Aspernatur, assumenda neque!
+        </p>
+        <a href="#" class="qty-button">En savoir plus</a>
+      </div>
+    </section>
+
     <!-- Maps & Contact -->
 
-    <section class="maps">
+    <section class="maps grid-col-2">
       <div class="maps-left">
-        <img src="" alt="Google maps" />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6400071672274!2d2.29988971508769!3d48.86507470819097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Av.%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sen!2sfr!4v1644842672210!5m2!1sen!2sfr"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
       <div class="maps-right">
         <h2>CONTACT</h2>
@@ -87,20 +131,28 @@
         <p>75008 Paris, France</p>
         <p>Tel: 01 12 34 56 78</p>
         <p>Fax: 01 12 34 56 78</p>
-        <p class="email">Email: contact@parimis.com</p>
+        <label>E-mail:</label>
+        <a href="mailto:contact@parimis.com" target="_blank"
+          >contact@parimis.com</a
+        >
       </div>
     </section>
 
+    <!-- Newsletter and cookies menu selection -->
     <section class="box grid-col-3">
       <div class="box-inner">
-        <div class="mail">
-          <img src="" alt="logo" />
-          <h2 class="">Newsletter</h2>
-          <form action="">
-            <input type="text" />
-          </form>
-          <a href="#" class="">S'inscrire</a>
-        </div>
+        <form action="">
+          <div class="mail-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h1>Newsletter</h1>
+          <p>Stay updated.</p>
+          <div class="form-input">
+            <label for="email"></label>
+            <input type="email" placeholder="Your Email" />
+            <button class="subscribe-btn">Subscribe</button>
+          </div>
+        </form>
       </div>
 
       <div class="cookies">
@@ -114,7 +166,7 @@
       <div class="btn">
         <button type="button" class="apple">
           <img src="images/Apple.svg" alt="Apple logo" /> Download on the
-          <span>app store</span>
+          <span>App store</span>
         </button>
         <button class="google">
           <img src="images/Google_Play.svg" alt="Google Play logo" />Get it on
@@ -143,7 +195,7 @@
             ><img src="images/social-twitter.svg" alt="Twitter"
           /></a>
         </div>
-        <p>&copy; 2022 Hotel parimis. All rights reserved</p>
+        <p>&copy; 2022 Hotel Parimis. All rights reserved</p>
       </div>
     </footer>
   </body>
