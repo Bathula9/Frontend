@@ -5,7 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -54,52 +64,88 @@
     <!-- ! FORMULAIRE -->
 
     <div class="container">
-      <div class="wrapper">
-        <div class="company-info">
-          <h3>Rendezvous @ Avenue Montaigne</h3>
+      <h2 class="mb-3">Rendezvous @ Avenue Montaigne</h2>
+      <form action="#">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <input
+              type="text"
+              placeholder="Enter your first name"
+              class="form-control"
+              id="firstName"
+              required
+            />
+          </div>
+          <div class="col-sm-6">
+            <input
+              type="text"
+              placeholder="Enter your last name"
+              class="form-control"
+              id="lastName"
+              required
+            />
+          </div>
         </div>
-        <div class="contact">
-          <h3>Tel: +33 01 02 03 04 05</h3>
-          <form action="#">
-            <p>
-              <input type="text" placeholder="Email" />
-            </p>
-            <p>
-              <select class="object">
-                <option value="object">Object</option>
-                <option value="spa">Spa</option>
-                <option value="restaurant">Restaurant</option>
-                <option value="rooms">Rooms</option>
-              </select>
-              <!-- <input type="text" placeholder="Object" /> -->
-            </p>
-            <p>
-              <input type="email" placeholder="Confirm your email address" />
-            </p>
-            <p>
-              <input type="text" placeholder="Enter your phone number" />
-            </p>
-            <p>
-              <input type="text" placeholder="First Name" />
-            </p>
-            <p>
-              <select id="title" name="title">
-                <option value="mr">Mr</option>
-                <option value="miss">Miss</option>
-                <option value="mrs">Mrs</option>
-              </select>
-              <input type="text" placeholder="Last Name" class="last" />
-            </p>
-            <p class="message">
-              <label for="">Message</label>
-              <textarea name="message" cols="30" rows="10"></textarea>
-            </p>
-            <p class="submit-btn">
-              <button>Submit</button>
-            </p>
-          </form>
+
+        <!-- second row -->
+        <div class="row">
+          <div class="col-sm-6">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="form-control"
+              id="eAddress"
+              required
+            />
+          </div>
+          <div class="col-sm-6">
+            <input
+              type="email"
+              placeholder="Confirm your email address"
+              class="form-control"
+              id="cAddress"
+              required
+            />
+          </div>
         </div>
-      </div>
+
+        <!-- Third row -->
+        <div class="row">
+          <div class="col-sm-6">
+            <input
+              type="text"
+              placeholder="Enter your phone number"
+              class="form-control"
+              id="phone"
+              required
+            />
+          </div>
+          <div class="col-sm-6">
+            <input
+              type="text"
+              placeholder="Object"
+              class="form-control"
+              id="object"
+              required
+            />
+          </div>
+        </div>
+      </form>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
