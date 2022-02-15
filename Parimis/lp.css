@@ -1,17 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.4;
 }
 
-ul {
+/* ul {
   list-style: none;
 }
 
@@ -22,17 +16,58 @@ p {
 
 img {
   max-width: 100%;
-}
+} */
 
 /* navbar */
 
-.navbar {
-  position: fixed;
+#mainNavbar {
   width: 100%;
   height: auto;
   background-color: #fff;
-  color: black;
   padding: 20px;
   box-shadow: 0 1px 3px rgb(0 0 0/10%), 0 2px 2px rgb(0 0 0/6%),
     0 0 2px rgb(0 0 0/7%);
+}
+
+#mainNavbar .nav-link {
+  color: #000;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #d50032;
+}
+
+.bg-image {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#change {
+  color: #d50032;
+}
+
+.parent {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-text h1 {
+  font-size: 60px;
+  margin: -20px 0 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.center-text p {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
