@@ -1,19 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap");
 
-html,
 body {
   font-family: "Open Sans", sans-serif;
-
-  line-height: 1.5;
+  line-height: 1.4;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*overflow-x: hidden; */
 }
 
+/* ul {
+  list-style: none;
+}
+
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+*/
+img {
+  max-width: 100%;
+}
+
+/* navbar */
+
 #navbar {
-  margin-bottom: 150px;
+  margin-bottom: 30px;
 }
 
 .navbar .nav-link {
@@ -113,62 +125,20 @@ ul {
   box-shadow: none;
 }
 
-/* **************************** FORM C U *****/
+/* ************** GALLERY *********************/
 
-#head {
-  color: #d50032;
-  font-family: "Pacifico", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  /* margin-top: -40px; */
+#gallery {
+  /* background-color: #dbddf1; */
+  background-color: rgb(220, 247, 167);
 }
 
-.effect {
-  border: 0;
-  outline: none;
+#gallery img {
+  background-color: #fff;
+  padding: 15px;
   width: 100%;
-  padding: 7px 0;
-  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0 15px rgba(red, green, blue, alpha);
 }
 
-.effect ~ .focus-border {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #d50032;
-  transition: 0.4s;
-}
-
-.effect:focus ~ .focus-border {
+#galleryModal .modal-img {
   width: 100%;
-  transition: 0.4s;
-  left: 0;
 }
-
-.btn1 {
-  background-color: #d50032;
-  color: #fff;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  height: 40px;
-  width: 145px;
-}
-
-.btn1:hover {
-  box-shadow: -1px 9px 27px -8px #d50032;
-}
-
-/* @media (max-width: 991px) {
-  #header {
-    background-color: #fff;
-  }
-
-  #header .nav-link {
-    line-height: 16px;
-  }
-} */
