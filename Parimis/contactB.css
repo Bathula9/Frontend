@@ -1,5 +1,174 @@
-* {
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap");
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  /* box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; */
+  /*overflow-x: hidden; */
 }
+
+#header {
+  margin-bottom: 150px;
+}
+
+#header .nav-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+#header .nav-link:hover {
+  color: #d50032;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#header .heading {
+  padding: 18px 15px;
+  box-shadow: 0 1px 3px rgb(0 0 0/10%), 0 2px 2px rgb(0 0 0/6%),
+    0 0 2px rgb(0 0 0/7%);
+  min-height: 12vh;
+  height: 0;
+}
+
+.navbar .navbar-brand a {
+  padding: 16px 0;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", sans-serif;
+  color: #d50032;
+  font-size: 30px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: #d50032;
+}
+
+.navbar-toggler {
+  background: #d50032;
+  border: none;
+  padding: 10px 6px;
+  outline: none;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border: 10px;
+  background: #fff;
+}
+
+.navbar-toggler span + span {
+  margin-top: 4px;
+  width: 16px;
+  /* margin-left: 10px; */
+}
+
+.navbar-toggler span + span + span {
+  width: 10px;
+  /* margin-left: 10px; */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 16px 10px;
+  font-size: 19px;
+  position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  border-bottom: 3px solid #d50032;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:active {
+  border-bottom: 3px solid #d50032;
+  color: #d50032;
+}
+
+.d-flex .btn {
+  padding: 5px;
+  border: 1px solid #d50032;
+}
+
+.form-control:focus {
+  border-color: #d50032;
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); */
+  box-shadow: none;
+}
+
+#dropdownMenuButton:focus {
+  outline: 0;
+  border-color: #d50032;
+  box-shadow: none;
+}
+
+/* **************************** FORM C U *****/
+
+#head {
+  color: #d50032;
+  font-family: "Pacifico", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  /* margin-top: -40px; */
+}
+
+.effect {
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.effect ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #d50032;
+  transition: 0.4s;
+}
+
+.effect:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+
+.btn1 {
+  background-color: #d50032;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 145px;
+}
+
+.btn1:hover {
+  box-shadow: -1px 9px 27px -8px #d50032;
+}
+
+/* @media (max-width: 991px) {
+  #header {
+    background-color: #fff;
+  }
+
+  #header .nav-link {
+    line-height: 16px;
+  }
+} */
