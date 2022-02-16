@@ -37,6 +37,10 @@ img {
   color: #d50032;
 }
 
+.navbarToggler {
+  color: #000;
+}
+
 .bg-image {
   padding-left: 0;
   padding-right: 0;
