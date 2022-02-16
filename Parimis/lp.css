@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap");
 
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.4;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* ul {
@@ -20,27 +24,108 @@ img {
 
 /* navbar */
 
-#mainNavbar {
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 1px 3px rgb(0 0 0/10%), 0 2px 2px rgb(0 0 0/6%),
-    0 0 2px rgb(0 0 0/7%);
+#navbar {
+  margin-bottom: 150px;
 }
 
-#mainNavbar .nav-link {
+.navbar .nav-link {
+  text-decoration: none;
   color: #000;
+  font-weight: 500;
 }
 
-#mainNavbar .nav-link:hover {
+.navbar .nav-link:hover {
   color: #d50032;
 }
 
-.navbarToggler {
-  color: #000;
+ul {
+  list-style-type: none;
 }
 
+/* #navbar {
+  padding: 18px 15px;
+  box-shadow: 0 1px 3px rgb(0 0 0/10%), 0 2px 2px rgb(0 0 0/6%),
+    0 0 2px rgb(0 0 0/7%);
+  min-height: 12vh;
+  height: 0;
+} */
+
+.navbar .navbar-brand a {
+  padding: 16px 0;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", sans-serif;
+  color: #d50032;
+  font-size: 30px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: #d50032;
+}
+
+.navbar-toggler {
+  background: #d50032;
+  border: none;
+  padding: 10px 6px;
+  outline: none;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border: 10px;
+  background: #fff;
+}
+
+.navbar-toggler span + span {
+  margin-top: 4px;
+  width: 16px;
+  /* margin-left: 10px; */
+}
+
+.navbar-toggler span + span + span {
+  width: 10px;
+  /* margin-left: 10px; */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 16px 10px;
+  font-size: 19px;
+  position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  border-bottom: 3px solid #d50032;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:active {
+  border-bottom: 3px solid #d50032;
+  color: #d50032;
+}
+
+.d-flex .btn {
+  padding: 5px;
+  border: 1px solid #d50032;
+}
+
+.form-control:focus {
+  border-color: #d50032;
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); */
+  box-shadow: none;
+}
+
+#dropdownMenuButton:focus {
+  outline: 0;
+  border-color: #d50032;
+  box-shadow: none;
+}
+
+/* Bg Image */
 .bg-image {
   padding-left: 0;
   padding-right: 0;
