@@ -154,3 +154,30 @@ ul {
   border-color: #d50032;
   box-shadow: none;
 }
+
+/* ******** SPA********/
+
+#spa h1 {
+  color: #d50032;
+  font-family: "Pacifico", sans-serif;
+  font-weight: 700;
+}
+
+.explore-spa .card {
+  border: none;
+  /* border-radius: 10px; */
+}
+
+.explore-spa .card img {
+  /* border-radius: 15px 15px 0 0; */
+  object-fit: cover;
+}
+
+#explore-spa #btn {
+  color: #d50032;
+}
+
+#explore-spa #btn:hover {
+  background-color: #d50032;
+  color: #fff;
+}
