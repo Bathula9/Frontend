@@ -8,7 +8,6 @@
     <!-- CSS : Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- <link rel="stylesheet" href="bootstrap.min.css" /> -->
     <!-- Custom css -->
     <link rel="stylesheet" href="contactB.css" />
     <!-- jQuery -->
@@ -21,12 +20,13 @@
       crossorigin="anonymous"
     />
   </head>
-<!-- <div class="container-lg">
+<div class="container-lg logo py-3 d-inline-flex">
+  <img class="img-fluid img-thumbnail" src="images/logo.jpg" alt="Logo">
   <h1>Parimis</h1>
-</div>  -->
+</div> 
     <!-- Navbar -->
-  <section id="header">
-    <nav class="navbar navbar-expand-lg bg-white heading fixed-top" id="navbar">
+  <section id="header" class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white heading" id="navbar">
      <div class="container-fluid"> 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
@@ -37,13 +37,16 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="rooms.html">Rooms</a>
+                <a class="nav-link" href="landingpage/lp.html">Home</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rooms/rooms.html">Rooms</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="restaurant.html">Restaurants</a>
+            <a class="nav-link" href="restaurant/restaurant.html">Restaurants</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="spa.html">Spa</a>
+            <a class="nav-link" href="spa/spa.html">Spa</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -58,19 +61,16 @@
               Contact Us
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Reservations</a>
-              <a class="dropdown-item" href="#">Avis</a>
+            <a class="dropdown-item" href="contact/contactB.html">Contact us</a>
+             <a class="dropdown-item" href="resa/resa.html">Reservations</a>
+              <a class="dropdown-item" href="avis/avis.html">Avis</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="gallery/gallery.html">Gallery</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Spa</a>
-          </li>
+          
         </ul>
-        <a class="navbar-brand" href="#">Parimis</a>
 
         <div class="dropdown ms-auto">
           <button
@@ -117,6 +117,7 @@
                       type="text"
                       class="effect"
                       placeholder="Enter your first name"
+                      class="form-control"
                     />
                     <span class="focus-border"></span>
                   </div>
@@ -127,6 +128,7 @@
                       type="text"
                       class="effect"
                       placeholder="Enter your last name"
+                      class="form-control"
                     />
                     <span class="focus-border"></span>
                   </div>
@@ -139,6 +141,7 @@
                       type="text"
                       class="effect"
                       placeholder="Enter your email address"
+                      class="form-control"
                     />
                     <span class="focus-border"></span>
                   </div>
@@ -147,6 +150,7 @@
                       type="text"
                       class="effect"
                       placeholder="Confirm your email address"
+                      class="form-control"
                     />
                     <span class="focus-border"></span>
                   </div>
@@ -158,6 +162,7 @@
                       type="text"
                       class="effect"
                       placeholder="Enter your phone number"
+                      class="form-control"
                     />
                     <span class="focus-border"></span>
                   </div>
@@ -165,7 +170,7 @@
                    <!-- Message row -->
                 <div class="row pt-4">
                   <div class="col-lg-12">
-                    <input type="text" class="effect" placeholder="Message" />
+                    <input type="text" class="effect" placeholder="Message" class="form-control" />
                     <span class="focus-border"></span>
                   </div>
                 </div>
@@ -173,7 +178,7 @@
                 <!-- checkbox -->
                 <div class="row pt-4">
                   <div class="col-lg-12">
-                    <p><input type="checkbox" /> I am not a Robot</p>
+                    <p><input type="checkbox" class="form-check-input" name="check" /> I am not a Robot</p>
                   </div>
                   <div class="offset col-lg-6 m-0 mt-2">
                     <button class="btn1">Submit</button>
@@ -221,7 +226,7 @@
 
 
   <!-- Footer -->
-  <footer class="bg-dark text-center text-white">
+  <footer class="bg-dark text-center text-white" id="footer">
     <!-- Grid container -->
     <div class="container p-4">
       <!-- Section: Social media -->
@@ -229,15 +234,15 @@
         <!-- Facebook -->
         <a
           class="btn btn-outline-light btn-floating m-1"
-          href="#!"
+          href="https://www.facebook.com"
           role="button"
-          ><i class="fab fa-facebook-f"></i
+          ><i class="fab fa-facebook"></i
         ></a>
 
         <!-- Twitter -->
         <a
           class="btn btn-outline-light btn-floating m-1"
-          href="#!"
+          href="https://www.twitter.com"
           role="button"
           ><i class="fab fa-twitter"></i
         ></a>
@@ -245,15 +250,15 @@
         <!-- Instagram -->
         <a
           class="btn btn-outline-light btn-floating m-1"
-          href="#!"
+          href="https://www.instagram.com"
           role="button"
           ><i class="fab fa-instagram"></i
         ></a>
 
-        <!-- Instagram -->
+        <!-- Youtube -->
         <a
           class="btn btn-outline-light btn-floating m-1"
-          href="#!"
+          href="https://www.youtube.com"
           role="button"
           ><i class="fab fa-youtube"></i
         ></a>
@@ -304,8 +309,7 @@
       <!-- Section: Text -->
       <section class="mb-4">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-          distinctio earum
+          Lorem ipsum dolor sit amet. - Slogan
         </p>
       </section>
       <!-- Section: Text -->
@@ -318,23 +322,10 @@
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#" class="text-white">Legal notice</a>
+                <a href="mentions/mentions.html" class="text-white">Legal notice</a>
               </li>
               <li>
-                <a href="#" class="text-white">Careers</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Privacy policy</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Press</a>
+                <a href="recrutement/recrutement.html" class="text-white">Careers</a>
               </li>
             </ul>
           </div>
@@ -344,10 +335,10 @@
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">Manage my cookies</a>
+                <a href="privacy/privacy.html" class="text-white">Privacy policy</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Covid-19</a>
+                <a href="press/press.html" class="text-white">Press</a>
               </li>
             </ul>
           </div>
@@ -357,10 +348,23 @@
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">Contact Us</a>
+                <a href="cgv/cgv.html" class="text-white">CGV</a>
               </li>
               <li>
-                <a href="#!" class="text-white">Press</a>
+                <a href="safety/safety.html" class="text-white">Covid-19</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="contactB.html" class="text-white">Contact Us</a>
+              </li>
+              <li>
+                <a href=".press/press.html" class="text-white">Press</a>
               </li>
             </ul>
           </div>

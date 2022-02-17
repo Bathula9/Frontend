@@ -17,16 +17,37 @@ p {
   margin: 5px 0;
   line-height: 1.7;
 }
-*/
+
 img {
   max-width: 100%;
-}
+} */
 
 /* navbar */
-
-#navbar {
-  margin-bottom: 30px;
+/* ***** Top logo */
+.logo img {
+  height: 90px;
+  width: 90px;
 }
+
+.logo h1 {
+  color: #d50032;
+  font-family: "Pacifico", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-align: center;
+  /* margin-top: -40px; */
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+}
+
+/* #navbar {
+  margin-bottom: 150px;
+} */
 
 .navbar .nav-link {
   text-decoration: none;
@@ -125,20 +146,38 @@ ul {
   box-shadow: none;
 }
 
-/* ************** GALLERY *********************/
-
-#gallery {
-  /* background-color: #dbddf1; */
-  background-color: rgb(220, 247, 167);
+/* Bg Image */
+.bg-image {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-#gallery img {
-  background-color: #fff;
-  padding: 15px;
-  width: 100%;
-  box-shadow: 0 0 15px rgba(red, green, blue, alpha);
+#change {
+  color: #d50032;
 }
 
-#galleryModal .modal-img {
-  width: 100%;
+.parent {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-text h1 {
+  font-size: 60px;
+  margin: -20px 0 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.center-text p {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
