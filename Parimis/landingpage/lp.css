@@ -23,10 +23,31 @@ img {
 } */
 
 /* navbar */
-
-#navbar {
-  margin-bottom: 150px;
+/* ***** Top logo */
+.logo img {
+  height: 90px;
+  width: 90px;
 }
+
+.logo h1 {
+  color: #d50032;
+  font-family: "Pacifico", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-align: center;
+  /* margin-top: -40px; */
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+}
+
+/* #navbar {
+  margin-bottom: 150px;
+} */
 
 .navbar .nav-link {
   text-decoration: none;
