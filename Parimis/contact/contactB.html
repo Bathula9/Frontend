@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <!-- CSS : Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
 
     <!-- Custom css -->
     <link rel="stylesheet" href="contactB.css" />
@@ -20,84 +20,106 @@
       crossorigin="anonymous"
     />
   </head>
-<div class="container-lg logo py-3 d-inline-flex">
-  <img class="img-fluid img-thumbnail" src="images/logo.jpg" alt="Logo">
-  <h1>Parimis</h1>
-</div> 
+  <body>
+    <div class="container-lg logo py-3 d-inline-flex">
+      <img
+        class="img-fluid img-thumbnail"
+        src="../images/logo.jpg"
+        alt="Logo"
+      />
+      <h1>Parimis</h1>
+    </div>
     <!-- Navbar -->
-  <section id="header" class="sticky-top">
-    <nav class="navbar navbar-expand-lg bg-white heading" id="navbar">
-     <div class="container-fluid"> 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-                <a class="nav-link" href="landingpage/lp.html">Home</a>
-              </li>
-          <li class="nav-item">
-            <a class="nav-link" href="rooms/rooms.html">Rooms</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="restaurant/restaurant.html">Restaurants</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="spa/spa.html">Spa</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="contactB.html"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Contact Us
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="contact/contactB.html">Contact us</a>
-             <a class="dropdown-item" href="resa/resa.html">Reservations</a>
-              <a class="dropdown-item" href="avis/avis.html">Avis</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery/gallery.html">Gallery</a>
-          </li>
-          
-        </ul>
-
-        <div class="dropdown ms-auto">
+    <section id="header" class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-white heading" id="navbar">
+        <div class="container-fluid">
           <button
-            class="btn dropdown-toggle"
+            class="navbar-toggler"
             type="button"
-            id="dropdownMenuButton"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
             aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            EN
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">FR</a>
-          </ul>
-        </div>
-<form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn" type="submit">Search</button>
-      </form>
-      </div>
-      </div>
-    </nav>
-</section>
 
-  <!-- FORM -->
-  <section class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../landingpage/lp.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../rooms/rooms.html">Rooms & Suites</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../restaurant/restaurant.html"
+                  >Restaurants</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../spa/spa.html">Spa</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="contactB.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Contact Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="../contact/contactB.html"
+                    >Contact us</a
+                  >
+                  <a class="dropdown-item" href="../resa/resa.html"
+                    >Reservations</a
+                  >
+                  <a class="dropdown-item" href="../avis/avis.html">Avis</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../gallery/gallery.html">Gallery</a>
+              </li>
+            </ul>
+
+            <div class="dropdown ms-auto">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                EN
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">FR</a>
+              </ul>
+            </div>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- FORM -->
+    <section class="container-fluid">
       <div class="row">
         <div class="col-lg-6 mx-auto">
           <div class="card">
@@ -167,10 +189,15 @@
                     <span class="focus-border"></span>
                   </div>
                 </div>
-                   <!-- Message row -->
+                <!-- Message row -->
                 <div class="row pt-4">
                   <div class="col-lg-12">
-                    <input type="text" class="effect" placeholder="Message" class="form-control" />
+                    <input
+                      type="text"
+                      class="effect"
+                      placeholder="Message"
+                      class="form-control"
+                    />
                     <span class="focus-border"></span>
                   </div>
                 </div>
@@ -178,7 +205,14 @@
                 <!-- checkbox -->
                 <div class="row pt-4">
                   <div class="col-lg-12">
-                    <p><input type="checkbox" class="form-check-input" name="check" /> I am not a Robot</p>
+                    <p>
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="check"
+                      />
+                      I am not a Robot
+                    </p>
                   </div>
                   <div class="offset col-lg-6 m-0 mt-2">
                     <button class="btn1">Submit</button>
@@ -189,202 +223,197 @@
           </div>
         </div>
       </div>
-    
     </section>
 
-<!-- Section Maps -->
+    <!-- Section Maps -->
 
-<section class="p-5 text-center text-sm-start">
-  <div class="container">
-    <div class="d-sm-flex align-items-center justify-content-between">
-      <div class="me-5 my-4">
-        <h2>Contact Us</h2>
-        <p class="lead">Hotel Parimis</p>
-        <p class="lead">&#x2729; &#x2729; &#x2729; &#x2729; &#x2729;</p>
-        <p class="lead">1, Avenue Montaigne</p>
-        <p class="lead">75008 Paris, France</p>
-        <p class="lead">Tel: 01 12 34 56 78</p>
-        <p class="lead">Fax: 01 12 34 56 78</p>
-        <label>E-mail:</label>
-        <a href="mailto:contact@parimis.com" target="_blank"
-          >contact@parimis.com</a
-        >
+    <section class="p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div class="me-5 my-4">
+            <h2>Contact Us</h2>
+            <p class="lead">Hotel Parimis</p>
+            <p class="lead">&#x2729; &#x2729; &#x2729; &#x2729; &#x2729;</p>
+            <p class="lead">1, Avenue Montaigne</p>
+            <p class="lead">75008 Paris, France</p>
+            <p class="lead">Tel: 01 12 34 56 78</p>
+            <p class="lead">Fax: 01 12 34 56 78</p>
+            <label>E-mail:</label>
+            <a href="mailto:contact@parimis.com" target="_blank"
+              >contact@parimis.com</a
+            >
+          </div>
+          <div
+            class="d-sm-flex ratio ratio-21x9 d-sm-block ms-9 align-items-center justify-content-between"
+          >
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6400071672274!2d2.29988971508769!3d48.86507470819097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Av.%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sen!2sfr!4v1644842672210!5m2!1sen!2sfr"
+              width="800"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
       </div>
-      <div class="d-sm-flex ratio ratio-21x9 d-sm-block ms-9 align-items-center justify-content-between">
-      <iframe class="embed-responsive-item"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6400071672274!2d2.29988971508769!3d48.86507470819097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Av.%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sen!2sfr!4v1644842672210!5m2!1sen!2sfr"
-          width="800"
-          height="600"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+    </section>
+
+    
+<!-- footer -->
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- YouTube -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com" role="button"
+        ><i class="fab fa-youtube"></i
+      ></a>
+     
+    </section>
+    <!-- Section: End of Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="#">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="newsletter" class="form-control" placeholder="Enter your email address"/>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
         </div>
-    </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="../mentions/mentions.html" class="text-white">Legal notice</a>
+            </li>
+            <li>
+              <a href="../recrutement/recrutement.html" class="text-white">Careers</a>
+            </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="../privacy/privacy.html" class="text-white">Privacy policy</a>
+            </li>
+            <li>
+              <a href="../press/press.html" class="text-white">Press</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="../cgv/cgv.html" class="text-white">CGV</a>
+            </li>
+            <li>
+              <a href="../safety/safety.html" class="text-white">Covid-19</a>
+            </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="../contact/contactB.html" class="text-white">Contact Us</a>
+            </li>
+            <li>
+              <a href="../plan/plan.html" class="text-white">Plan</a>
+            </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
   </div>
-</section>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 The Parimis
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  </div>
 
 
-  <!-- Footer -->
-  <footer class="bg-dark text-center text-white" id="footer">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="https://www.facebook.com"
-          role="button"
-          ><i class="fab fa-facebook"></i
-        ></a>
-
-        <!-- Twitter -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="https://www.twitter.com"
-          role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-
-        <!-- Instagram -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="https://www.instagram.com"
-          role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-
-        <!-- Youtube -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="https://www.youtube.com"
-          role="button"
-          ><i class="fab fa-youtube"></i
-        ></a>
-      </section>
-      <!-- Section: End of Social media -->
-
-      <!-- Section: Form -->
-      <section class="newsletter">
-        <form action="#">
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-auto">
-              <p class="pt-2">
-                <strong>Sign up for our newsletter</strong>
-              </p>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-5 col-12">
-              <!-- Email input -->
-              <div class="form-outline form-white mb-4">
-                <input
-                  type="email"
-                  id="newsletter"
-                  class="form-control"
-                  placeholder="Enter your email address"
-                />
-              </div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-auto">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
-                Subscribe
-              </button>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </form>
-      </section>
-      <!-- Section: Form -->
-
-      <!-- Section: Text -->
-      <section class="mb-4">
-        <p>
-          Lorem ipsum dolor sit amet. - Slogan
-        </p>
-      </section>
-      <!-- Section: Text -->
-
-      <!-- Section: Links -->
-      <section class="links">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="mentions/mentions.html" class="text-white">Legal notice</a>
-              </li>
-              <li>
-                <a href="recrutement/recrutement.html" class="text-white">Careers</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="privacy/privacy.html" class="text-white">Privacy policy</a>
-              </li>
-              <li>
-                <a href="press/press.html" class="text-white">Press</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="cgv/cgv.html" class="text-white">CGV</a>
-              </li>
-              <li>
-                <a href="safety/safety.html" class="text-white">Covid-19</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="contactB.html" class="text-white">Contact Us</a>
-              </li>
-              <li>
-                <a href=".press/press.html" class="text-white">Press</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2022 The Parimis
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-
-  <!-- <script src="js/bootstrap.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
   </body>
 </html>
