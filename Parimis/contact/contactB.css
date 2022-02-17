@@ -135,6 +135,15 @@ ul {
   justify-content: center;
 }
 
+.d-flex .btn:hover {
+  background-color: #d50032;
+  color: #fff;
+}
+
+.social .btn i:hover {
+  color: #d50032;
+}
+
 /* **************************** FORM C U *****/
 
 #head {

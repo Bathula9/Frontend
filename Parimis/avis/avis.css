@@ -134,6 +134,15 @@ ul {
   border: 1px solid #d50032;
 }
 
+.d-flex .btn:hover {
+  background-color: #d50032;
+  color: #fff;
+}
+
+.social .btn i:hover {
+  color: #d50032;
+}
+
 .form-control:focus {
   border-color: #d50032;
   /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); */
@@ -144,4 +153,39 @@ ul {
   outline: 0;
   border-color: #d50032;
   box-shadow: none;
+}
+
+/* *************AVIS CAROUSEL */
+
+#avis {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+/* .picture-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+} */
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 12%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#avis h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
