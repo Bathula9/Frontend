@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <div class="container-lg logo py-3 d-inline-flex">
+    <div class="container-lg logo py-3 d-flex">
       <img
         class="img-fluid img-thumbnail"
         src="../images/logo.jpg"
@@ -121,10 +121,10 @@
     </section>
 
     <!-- FORM -->
-    <section class="container-fluid">
+    <section class="container-fluid" >
       <div class="row">
         <div class="col-lg-6 mx-auto">
-          <div class="card">
+          <div class="card" id="box">
             <div class="card-body">
               <div class="row">
                 <div class="col-lg-12">
@@ -143,7 +143,6 @@
                       placeholder="Enter your first name"
                       class="form-control"
                     />
-                    <span class="focus-border"></span>
                   </div>
 
                   <!-- another input -->
@@ -154,7 +153,6 @@
                       placeholder="Enter your last name"
                       class="form-control"
                     />
-                    <span class="focus-border"></span>
                   </div>
                 </div>
 
@@ -167,28 +165,53 @@
                       placeholder="Enter your email address"
                       class="form-control"
                     />
-                    <span class="focus-border"></span>
                   </div>
                   <div class="col-lg-6">
                     <input
                       type="text"
                       class="effect"
-                      placeholder="Confirm your email address"
+                      placeholder="Enterprise"
                       class="form-control"
                     />
-                    <span class="focus-border"></span>
                   </div>
                 </div>
                 <!-- phone number row -->
                 <div class="row pt-4">
-                  <div class="col-lg-12">
+                  <div class="col-lg-6">
                     <input
                       type="text"
                       class="effect"
-                      placeholder="Enter your phone number"
+                      placeholder="Country"
                       class="form-control"
                     />
-                    <span class="focus-border"></span>
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      class="effect"
+                      placeholder="Phone number"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <!-- Object & Category -->
+                <div class="row pt-4">
+                  <div class="col-lg-6">
+                    <select name="category" id="category" class="effect">
+  <option value="category"class="category">Category</option>
+  <option value="rooms">Rooms</option>
+  <option value="restaurant">Restaurant</option>
+  <option value="spa">Spa</option>
+  <option value="general">General</option>
+</select>
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      class="effect"
+                      placeholder="Object"
+                      class="form-control"
+                    />
                   </div>
                 </div>
                 <!-- Message row -->
@@ -200,7 +223,6 @@
                       placeholder="Message"
                       class="form-control"
                     />
-                    <span class="focus-border"></span>
                   </div>
                 </div>
 
