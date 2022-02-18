@@ -139,6 +139,21 @@ ul {
   color: #fff;
 }
 
+/* ***************** dropdown hover  **********/
+
+.dropdown a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.dropdown a:hover {
+  border-bottom: 3px solid #d50032;
+  background: none;
+  color: #d50032;
+}
+/* ***************************************** */
+
 .social .btn i:hover {
   color: #d50032;
 }
@@ -188,4 +203,30 @@ ul {
   font-size: 3rem;
   font-weight: 600;
   line-height: 1.5;
+}
+
+/* form */
+
+.contact .btn {
+  padding: 5px;
+  background-color: #d50032;
+  color: #fff;
+  border: 1px solid #d50032;
+}
+
+.contact .btn:hover {
+  background-color: #fff;
+  color: #d50032;
+}
+
+/* ****** footer ******/
+
+.back {
+  background-color: #d50032;
+}
+
+.newsletter .effect {
+  background-color: #fff;
+  color: #d50032;
+  padding: 7px;
 }

@@ -30,7 +30,7 @@
       <h1>Parimis</h1>
     </div>
     <!-- Navbar -->
-    <section id="header" class="sticky-top">
+    <div id="header" class="sticky-top">
       <nav class="navbar navbar-expand-lg bg-white heading" id="navbar">
         <div class="container-fluid">
           <button
@@ -52,7 +52,9 @@
                 <a class="nav-link" href="../landingpage/lp.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../rooms/rooms.html">Rooms & Suites</a>
+                <a class="nav-link" href="../rooms/rooms.html"
+                  >Rooms & Suites</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../restaurant/restaurant.html"
@@ -82,8 +84,12 @@
                     >Reservations</a
                   >
                   <a class="dropdown-item" href="../avis/avis.html">Avis</a>
-                  <a class="dropdown-item" href="../events/events.html">Events</a>
-                <a class="dropdown-item" href="../who/who.html">Qui sommes-nous?</a>
+                  <a class="dropdown-item" href="../events/events.html"
+                    >Events</a
+                  >
+                  <a class="dropdown-item" href="../who/who.html"
+                    >Qui sommes-nous?</a
+                  >
                 </div>
               </li>
               <li class="nav-item">
@@ -103,7 +109,9 @@
                 EN
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">FR</a>
+                <li>
+                  <a class="dropdown-item" href="#">FR</a>
+                </li>
               </ul>
             </div>
             <form class="d-flex">
@@ -118,10 +126,10 @@
           </div>
         </div>
       </nav>
-    </section>
+    </div>
 
     <!-- FORM -->
-    <section class="container-fluid" >
+    <section class="container-fluid">
       <div class="row">
         <div class="col-lg-6 mx-auto">
           <div class="card" id="box">
@@ -198,12 +206,14 @@
                 <div class="row pt-4">
                   <div class="col-lg-6">
                     <select name="category" id="category" class="effect">
-  <option value="category"class="category">Category</option>
-  <option value="rooms">Rooms</option>
-  <option value="restaurant">Restaurant</option>
-  <option value="spa">Spa</option>
-  <option value="general">General</option>
-</select>
+                      <option value="category" class="category">
+                        Category
+                      </option>
+                      <option value="rooms">Rooms</option>
+                      <option value="restaurant">Restaurant</option>
+                      <option value="spa">Spa</option>
+                      <option value="general">General</option>
+                    </select>
                   </div>
                   <div class="col-lg-6">
                     <input
@@ -284,160 +294,178 @@
       </div>
     </section>
 
-    
-<!-- footer -->
-<!-- Footer -->
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4 social">
-      <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
+    <!-- Footer -->
+    <footer class="back text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <div class="mb-4 social">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.facebook.com"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
 
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com" role="button"
-        ><i class="fab fa-twitter"></i
-      ></a>
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.twitter.com"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
 
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
 
-      <!-- YouTube -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com" role="button"
-        ><i class="fab fa-youtube"></i
-      ></a>
-     
-    </section>
-    <!-- Section: End of Social media -->
+          <!-- YouTube -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.youtube.com"
+            role="button"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
 
-    <!-- Section: Form -->
-    <section class="newsletter">
-      <form action="#">
-        <!--Grid row-->
-        <div class="row d-flex justify-content-center">
-          <!--Grid column-->
-          <div class="col-auto">
-            <p class="pt-2">
-              <strong>Sign up for our newsletter</strong>
-            </p>
-          </div>
-          <!--Grid column-->
+        <!-- Section: Form -->
+        <div class="newsletter">
+          <form action="#">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
 
-          <!--Grid column-->
-          <div class="col-md-5 col-12">
-            <!-- Email input -->
-            <div class="form-outline form-white mb-4">
-              <input type="email" id="newsletter" class="form-control" placeholder="Enter your email address"/>
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="newsletter"
+                    class="form-control"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  class="btn btn-outline-light mb-4 effect1"
+                >
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
             </div>
+            <!--Grid row-->
+          </form>
+        </div>
+        <!-- Section: Form -->
+
+        <!-- Section: Text -->
+        <div class="mb-4">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            distinctio earum
+          </p>
+        </div>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <div class="links">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="../mentions/mentions.html" class="text-white"
+                    >Legal notice</a
+                  >
+                </li>
+                <li>
+                  <a href="../recrutement/recrutement.html" class="text-white"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="../privacy/privacy.html" class="text-white"
+                    >Privacy policy</a
+                  >
+                </li>
+                <li>
+                  <a href="../press/press.html" class="text-white">Press</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="../cgv/cgv.html" class="text-white">CGV</a>
+                </li>
+                <li>
+                  <a href="../safety/safety.html" class="text-white"
+                    >Covid-19</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="../contact/contactB.html" class="text-white"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="../plan/plan.html" class="text-white">Plan</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-auto">
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-outline-light mb-4">
-              Subscribe
-            </button>
-          </div>
-          <!--Grid column-->
+          <!--Grid row-->
         </div>
-        <!--Grid row-->
-      </form>
-    </section>
-    <!-- Section: Form -->
-
-    <!-- Section: Text -->
-    <section class="mb-4">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-        
-      </p>
-    </section>
-    <!-- Section: Text -->
-
-    <!-- Section: Links -->
-    <section class="links">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="../mentions/mentions.html" class="text-white">Legal notice</a>
-            </li>
-            <li>
-              <a href="../recrutement/recrutement.html" class="text-white">Careers</a>
-            </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="../privacy/privacy.html" class="text-white">Privacy policy</a>
-            </li>
-            <li>
-              <a href="../press/press.html" class="text-white">Press</a>
-            </li>
-            
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="../cgv/cgv.html" class="text-white">CGV</a>
-            </li>
-            <li>
-              <a href="../safety/safety.html" class="text-white">Covid-19</a>
-            </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="../contact/contactB.html" class="text-white">Contact Us</a>
-            </li>
-            <li>
-              <a href="../plan/plan.html" class="text-white">Plan</a>
-            </li>
-            </ul>
-        </div>
-        <!--Grid column-->
+        <!-- Section: Links -->
       </div>
-      <!--Grid row-->
-    </section>
-    <!-- Section: Links -->
-  </div>
-  <!-- Grid container -->
+      <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 The Parimis
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
-  </div>
-
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 The Parimis
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <script src="../js/bootstrap.min.js"></script>
-    
   </body>
 </html>
