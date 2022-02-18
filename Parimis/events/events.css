@@ -154,3 +154,49 @@ ul {
   border-color: #d50032;
   box-shadow: none;
 }
+
+/* ***************** dropdown hover  **********/
+
+.dropdown a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.dropdown a:hover {
+  border-bottom: 3px solid #d50032;
+  background: none;
+  color: #d50032;
+}
+/* ***************************************** */
+
+/* ************** 3 blocks of events */
+
+.blurb h2 {
+  color: #d50032;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.blurb p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* ****** footer ******/
+
+.back {
+  background-color: #d50032;
+}
+
+.newsletter .effect1 {
+  background-color: #fff;
+  color: #d50032;
+  padding: 7px;
+}

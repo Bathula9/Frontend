@@ -59,9 +59,31 @@ img {
   color: #d50032;
 }
 
+/* ********scroll  */
+
+.navbar.scrolled {
+  background: #d50032;
+  transition: background 500ms;
+}
+
 ul {
   list-style-type: none;
 }
+
+/* ***************** dropdown hover  **********/
+
+.dropdown a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.dropdown a:hover {
+  border-bottom: 3px solid #d50032;
+  background: none;
+  color: #d50032;
+}
+/* ***************************************** */
 
 /* #navbar {
   padding: 18px 15px;
@@ -165,4 +187,23 @@ ul {
   background-color: #fff;
   color: #d50032;
   padding: 7px;
+}
+
+/* ******************* WHO ARE WE */
+
+.blurb h2 {
+  color: #d50032;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.blurb p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
