@@ -30,6 +30,13 @@ ul {
   list-style-type: none;
 }
 
+/* ********scroll  */
+
+.navbar.scrolled {
+  background: #d50032;
+  transition: background 500ms;
+}
+
 /* #navbar {
   padding: 18px 15px;
   box-shadow: 0 1px 3px rgb(0 0 0/10%), 0 2px 2px rgb(0 0 0/6%),
