@@ -154,3 +154,15 @@ ul {
   border-color: #d50032;
   box-shadow: none;
 }
+
+/* ****** footer ******/
+
+.back {
+  background-color: #d50032;
+}
+
+.newsletter .effect {
+  background-color: #fff;
+  color: #d50032;
+  padding: 7px;
+}

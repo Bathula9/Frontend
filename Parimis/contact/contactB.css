@@ -114,7 +114,7 @@ ul {
   background: none;
   color: #d50032;
 }
-
+/* ***************************************** */
 .form-control:focus {
   border-color: #d50032;
   /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); */
@@ -210,6 +210,18 @@ ul {
 
 #footer {
   background-color: #d50032;
+}
+
+/* ****** footer ******/
+
+.back {
+  background-color: #d50032;
+}
+
+.newsletter .effect1 {
+  background-color: #fff;
+  color: #d50032;
+  padding: 7px;
 }
 
 /* @media (max-width: 991px) {

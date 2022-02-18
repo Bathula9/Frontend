@@ -106,6 +106,21 @@ ul {
   color: #fff;
 }
 
+/* ***************** dropdown hover **********/
+
+.dropdown a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.dropdown a:hover {
+  border-bottom: 3px solid #d50032;
+  background: none;
+  color: #d50032;
+}
+/* ***************************************** */
+
 .social .btn i:hover {
   color: #d50032;
 }
@@ -122,7 +137,7 @@ ul {
   box-shadow: none;
 }
 
-/* ***** Top logo */
+/* ***** Top logo *****/
 .logo img {
   height: 90px;
   width: 90px;
@@ -142,4 +157,33 @@ ul {
 .logo {
   align-items: center;
   justify-content: center;
+}
+
+.explore-press .read {
+  color: #d50032;
+}
+
+.explore-press .read:hover {
+  color: #fff;
+  background-color: #d50032;
+}
+
+/* ********* HOVER EFFECT ON CARDS******************/
+
+.border:hover {
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+
+/* ****** footer ******/
+
+.back {
+  background-color: #d50032;
+}
+
+.newsletter .effect {
+  background-color: #fff;
+  color: #d50032;
+  padding: 7px;
 }
