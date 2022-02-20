@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events</title>
+    <title>Meetings & Events</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../fav/site.webmanifest" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
 
     <!-- Custom CSS -->
@@ -19,17 +37,15 @@
   </head>
 
   <body>
-    <div class="container-lg logo py-3 d-flex">
-      <img
-        class="img-fluid img-thumbnail"
-        src="../images/logo.jpg"
-        alt="Logo"
-      />
-      <h1>Parimis</h1>
-    </div>
+    <header class="d-flex justify-content-end">
+      <div class="logo m-auto">
+        <img src="../images/4.png" alt="logo" />
+      </div>
+    </header>
+
     <!-- Navbar -->
     <div id="header" class="sticky-top">
-      <nav class="navbar navbar-expand-lg bg-white heading" id="navbar">
+      <nav class="navbar navbar-expand-lg heading" id="navbar">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -46,47 +62,81 @@
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../landingpage/lp.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../rooms.html">Rooms & Suites</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../restaurant.html">Restaurants</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../spa.html">Spa</a>
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="contactB.html"
-                  id="navbarDropdown"
+                  href="lp.html"
+                  id="navbarDropdown1"
                   role="button"
                   data-bs-toggle="dropdown"
+                  aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Contact Us
+                  Hôtel
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="../contact/contactB.html"
-                    >Contact us</a
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="../landingpage/lp.html"
+                    >Home</a
+                  >
+                  <a class="dropdown-item" href="../who/who.html"
+                    >Who are we?</a
                   >
                   <a class="dropdown-item" href="../resa/resa.html"
                     >Reservations</a
                   >
-                  <a class="dropdown-item" href="../avis/avis.html">Avis</a>
+                  <a class="dropdown-item" href="../avis/avis.html">Reviews</a>
                   <a class="dropdown-item" href="../events/events.html"
-                    >Events</a
+                    >Meetings & Events</a
                   >
-                  <a class="dropdown-item" href="../who/who.html"
-                    >Qui sommes-nous?</a
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="rooms.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Chambres
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="../rooms/rooms.html"
+                    >Chambres & Suites</a
+                  >
+                  <a class="dropdown-item" href="../Classic/classic.html"
+                    >Classique</a
+                  >
+                  <a class="dropdown-item" href="../comfort/comfort.html"
+                    >Comfort</a
+                  >
+                  <a class="dropdown-item" href="../deluxe/deluxe.html"
+                    >Deluxe</a
+                  >
+                  <a class="dropdown-item" href="../suites/suites.html"
+                    >Suite</a
                   >
                 </div>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="../restaurant/restaurant.html"
+                  >Restaurant</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../spa/spa.html">Spa</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link" href="../gallery/gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact/contactB.html"
+                  >Contact us</a
+                >
               </li>
             </ul>
 
@@ -127,7 +177,7 @@
     <section id="events">
       <div
         id="carouselExampleControls"
-        class="carousel slide pt-5"
+        class="carousel slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
@@ -165,75 +215,77 @@
 
     <!-- ****************************** 3 blocks of events -->
 
-    <section class="container-fluid px-0">
+    <section class="container-fluid">
+      <!-- *************first ************* -->
+
       <div class="row align-items-center content">
         <div class="col-md-6 order-2 order-md-1">
-          <img src="../images/event1.jpg" alt="building" class="img-fluid" />
+          <img
+            src="../images/event1.jpg"
+            alt="building"
+            class="img-fluid ms-md-0"
+          />
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-              <h2>Meetings</h2>
+              <h2 class="letter">Events</h2>
               <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                iste molestiae beatae, maiores deserunt in voluptatibus
-                aspernatur architecto excepturi delectus soluta? Ipsa, deleniti
-                dolorem hic consequatur repellat eveniet quidem voluptate
-                necessitatibus dolorum delectus minus vitae, ut, veritatis sint
-                ipsum magnam autem nam ex deserunt debitis eaque ratione! Nobis,
-                quidem assumenda.
+                Ideal for meetings, cocktails and gastronomic dinners, the rooms
+                are spacious, decorated in an opulent 18th century style, makes
+                her the supermodel of rooms.At night everything sparkles – the
+                chandeliers in the restaurant opposite, the stars above and the
+                mirrored reflections of your own glamorous event.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- ************************ 2nd row ************************************ -->
+      <!-- *************second ************* -->
+
       <div class="row align-items-center content">
         <div class="col-md-6 text-center">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-              <h2>Events</h2>
-
+              <h2 class="letter">Meetings</h2>
               <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                labore dolorem rem commodi delectus? Saepe sed ullam fugit magni
-                laudantium sapiente ipsa amet temporibus assumenda commodi odit
-                voluptates eum explicabo aspernatur, molestias dignissimos
-                dolorum ad nihil.
+                This historic salon, replete with spectacular wooden panelling
+                and a sense of calm, is perfect for business conferences,
+                meetings and more intimate celebrations.A lift allows you to
+                move directly between guestrooms and the Salon Collection,
+                avoiding all public areas of the hotel.
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <img src="../images/event2.jpg" alt="building" class="img-fluid" />
-        </div>
-      </div>
-      <!-- *************** 3rd ROW ********************* -->
-      <div class="row align-items-center content">
-        <div class="col-md-6 order-2 order-md-1">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/iLSqqeyrPuo"
+            src="https://www.youtube.com/embed/GEI4I3XsADE"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
+      </div>
+      <!-- *************third ************* -->
+
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="../images/event2.jpg" alt="" class="img-fluid ms-md-0" />
+        </div>
         <div class="col-md-6 text-center order-1 order-md-2">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-              <h2>Weddings</h2>
+              <h2 class="letter">Weddings</h2>
 
               <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                iste molestiae beatae, maiores deserunt in voluptatibus
-                aspernatur architecto excepturi delectus soluta? Ipsa, deleniti
-                dolorem hic consequatur repellat eveniet quidem voluptate
-                necessitatibus dolorum delectus minus vitae, ut, veritatis sint
-                ipsum magnam autem nam ex deserunt debitis eaque ratione! Nobis,
-                quidem assumenda.
+                Wonderful weddings in the city of love. Alive with legendary
+                love stories and a romantic soul, Hôtel Parimis is the setting
+                for dreams to come true.Timeless glamour at the most Haute
+                Couture address in Paris, the most romantic city in the world.
               </p>
             </div>
           </div>
@@ -241,7 +293,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- *****************Footer ******************************-->
     <footer class="back text-center text-white">
       <!-- Grid container -->
       <div class="container p-4">
@@ -310,10 +362,7 @@
               <!--Grid column-->
               <div class="col-auto">
                 <!-- Submit button -->
-                <button
-                  type="submit"
-                  class="btn btn-outline-light mb-4 effect1"
-                >
+                <button type="submit" class="btn btn-outline-light mb-4 effect">
                   Subscribe
                 </button>
               </div>
@@ -323,15 +372,6 @@
           </form>
         </div>
         <!-- Section: Form -->
-
-        <!-- Section: Text -->
-        <div class="mb-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum
-          </p>
-        </div>
-        <!-- Section: Text -->
 
         <!-- Section: Links -->
         <div class="links">
@@ -376,8 +416,8 @@
                   <a href="../cgv/cgv.html" class="text-white">CGV</a>
                 </li>
                 <li>
-                  <a href="../safety/safety.html" class="text-white"
-                    >Covid-19</a
+                  <a href="javascript:window.print();" class="text-white"
+                    >Print this page</a
                   >
                 </li>
               </ul>
@@ -407,7 +447,8 @@
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2022 The Parimis
+        © 2022 The Parimis - BB Site réalisé dans le cadre d'une formation
+        Ifocop
       </div>
       <!-- Copyright -->
     </footer>

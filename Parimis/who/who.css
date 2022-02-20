@@ -18,15 +18,6 @@ body {
 
 /* ****************** BASKET *****************/
 
-/* .d-flex {
-  flex-grow: 1;
-} */
-
-.basket a {
-  color: #000;
-  text-decoration: none;
-}
-
 .navbar .nav-link {
   text-decoration: none;
   color: #000;
@@ -165,6 +156,14 @@ ul {
 .content {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.blurb .letter::first-letter {
+  font-family: "Alex Brush", cursive;
+  color: #d50032;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 0.35em;
 }
 
 /* ******************************************************************* */

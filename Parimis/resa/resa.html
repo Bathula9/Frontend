@@ -143,7 +143,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../restaurant/restaurant.html"
-                  >Restaurants</a
+                  >Restaurant</a
                 >
               </li>
               <li class="nav-item">
@@ -194,6 +194,137 @@
     </div>
 
     <!-- ****************** Reservations *********************** -->
+    <!-- *****************FORM************************** -->
+
+    <div class="container-fluid pls">
+      <h4 class="text-center p-1 mt-4">
+        Please call +33 12 45 78 96 30 or fill this form to make a reservation
+      </h4>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="form">
+            <form action="#" class="mt-5 border p-3 shadow mb-4">
+              <!-- *****************1st row ********* -->
+              <div class="row">
+                <div class="mb-3 col-md-6">
+                  <label for="fName"
+                    >First Name<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="fName"
+                    id="fName"
+                    class="form-control effect"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label for="lName"
+                    >Last Name<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="lName"
+                    id="lName"
+                    class="form-control effect"
+                  />
+                </div>
+
+                <!-- *****************2nd row ********* -->
+                <div class="mb-3 col-md-6">
+                  <label for="email"
+                    >Email<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control effect"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label for="phone"
+                    >Phone Number<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    class="form-control effect"
+                  />
+                </div>
+                <!-- ************3rd row************ -->
+                <div class="mb-3 col-md-6">
+                  <label for="adult"
+                    >Number of adults<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="number"
+                    min="0"
+                    name="adult"
+                    class="form-control effect"
+                    id="adult"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label for="child"
+                    >Number of children<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="number"
+                    min="0"
+                    name="child"
+                    class="form-control effect"
+                    id="child"
+                  />
+                </div>
+
+                <!-- *****************4th row ************** -->
+                <div class="mb-3 col-md-12">
+                  <label for="category" class="mb-2"
+                    >Category<span class="text-danger">*</span></label
+                  >
+                  <select name="category" id="category" class="effect w-100">
+                    <option value="classic">Classic</option>
+                    <option value="comfort">Comfort</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suites</option>
+                  </select>
+                </div>
+                <!-- ***************** 5th row **************** -->
+                <div class="mb-3 col-md-6">
+                  <label for="arr"
+                    >Check-in<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="date"
+                    name="arr"
+                    id="arr"
+                    class="form-control effect"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label for="dep"
+                    >Check-out<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="date"
+                    name="dep"
+                    id="dep"
+                    class="form-control effect"
+                  />
+                </div>
+                <div class="mb-3 col-md-12 text-center read">
+                  <button class="btn mt-2">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- *****Footer*********** -->
     <footer class="back text-center text-white">
