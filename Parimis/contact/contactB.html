@@ -5,16 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- CSS : Bootstrap -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../fav/site.webmanifest" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
 
-    <!-- Custom css -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="contactB.css" />
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- font awesome -->
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -22,18 +35,17 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
-    <div class="container-lg logo py-3 d-flex">
-      <img
-        class="img-fluid img-thumbnail"
-        src="../images/logo.jpg"
-        alt="Logo"
-      />
-      <h1>Parimis</h1>
-    </div>
+    <header class="d-flex justify-content-end">
+      <div class="logo m-auto">
+        <img src="../images/4.png" alt="logo" />
+      </div>
+    </header>
+
     <!-- Navbar -->
     <div id="header" class="sticky-top">
-      <nav class="navbar navbar-expand-lg heading" id="mainNavbar">
+      <nav class="navbar navbar-expand-lg heading" id="navbar">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -50,52 +62,81 @@
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../landingpage/lp.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../rooms/rooms.html"
-                  >Rooms & Suites</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../restaurant/restaurant.html"
-                  >Restaurants</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../spa/spa.html">Spa</a>
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="contactB.html"
+                  href="lp.html"
+                  id="navbarDropdown1"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Hôtel
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="../landingpage/lp.html"
+                    >Home</a
+                  >
+                  <a class="dropdown-item" href="../who/who.html"
+                    >Who are we?</a
+                  >
+                  <a class="dropdown-item" href="../resa/resa.html"
+                    >Reservations</a
+                  >
+                  <a class="dropdown-item" href="../avis/avis.html">Reviews</a>
+                  <a class="dropdown-item" href="../events/events.html"
+                    >Meetings & Events</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="rooms.html"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Contact Us
+                  Chambres
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="../contact/contactB.html"
-                    >Contact us</a
+                  <a class="dropdown-item" href="../rooms/rooms.html"
+                    >Chambres & Suites</a
                   >
-                  <a class="dropdown-item" href="../resa/resa.html"
-                    >Reservations</a
+                  <a class="dropdown-item" href="../Classic/classic.html"
+                    >Classique</a
                   >
-                  <a class="dropdown-item" href="../avis/avis.html">Avis</a>
-                  <a class="dropdown-item" href="../events/events.html"
-                    >Events</a
+                  <a class="dropdown-item" href="../comfort/comfort.html"
+                    >Comfort</a
                   >
-                  <a class="dropdown-item" href="../who/who.html"
-                    >Qui sommes-nous?</a
+                  <a class="dropdown-item" href="../deluxe/deluxe.html"
+                    >Deluxe</a
+                  >
+                  <a class="dropdown-item" href="../suites/suites.html"
+                    >Suite</a
                   >
                 </div>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="../restaurant/restaurant.html"
+                  >Restaurant</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../spa/spa.html">Spa</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link" href="../gallery/gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact/contactB.html"
+                  >Contact us</a
+                >
               </li>
             </ul>
 
@@ -132,8 +173,8 @@
       </nav>
     </div>
 
-    <!-- FORM -->
-    <section class="container-fluid">
+    <!-- *****************FORM************************** -->
+    <section class="container-fluid pt-3">
       <div class="row">
         <div class="col-lg-6 mx-auto">
           <div class="card" id="box">
@@ -151,7 +192,7 @@
                   <div class="col-lg-6">
                     <input
                       type="text"
-                      class="effect"
+                      class="form-control effect"
                       placeholder="Enter your first name"
                     />
                   </div>
@@ -160,7 +201,7 @@
                   <div class="col-lg-6">
                     <input
                       type="text"
-                      class="effect"
+                      class="form-control effect"
                       placeholder="Enter your last name"
                     />
                   </div>
@@ -171,14 +212,14 @@
                   <div class="col-lg-6">
                     <input
                       type="text"
-                      class="effect"
+                      class="form-control effect"
                       placeholder="Enter your email address"
                     />
                   </div>
                   <div class="col-lg-6">
                     <input
                       type="text"
-                      class="effect"
+                      class="form-control effect"
                       placeholder="Enterprise"
                     />
                   </div>
@@ -191,7 +232,7 @@
                   <div class="col-lg-6">
                     <input
                       type="text"
-                      class="effect"
+                      class="form-control effect"
                       placeholder="Phone number"
                     />
                   </div>
@@ -210,13 +251,21 @@
                     </select>
                   </div>
                   <div class="col-lg-6">
-                    <input type="text" class="effect" placeholder="Object" />
+                    <input
+                      type="text"
+                      class="form-control effect"
+                      placeholder="Object"
+                    />
                   </div>
                 </div>
                 <!-- Message row -->
                 <div class="row pt-4">
                   <div class="col-lg-12">
-                    <input type="text" class="effect" placeholder="Message" />
+                    <input
+                      type="text"
+                      class="form-control effect"
+                      placeholder="Message"
+                    />
                   </div>
                 </div>
 
@@ -228,6 +277,7 @@
                         type="checkbox"
                         class="form-check-input"
                         name="check"
+                        required
                       />
                       I am not a Robot
                     </p>
@@ -278,7 +328,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- *****************Footer ******************************-->
     <footer class="back text-center text-white">
       <!-- Grid container -->
       <div class="container p-4">
@@ -347,10 +397,7 @@
               <!--Grid column-->
               <div class="col-auto">
                 <!-- Submit button -->
-                <button
-                  type="submit"
-                  class="btn btn-outline-light mb-4 effect1"
-                >
+                <button type="submit" class="btn btn-outline-light mb-4 effect">
                   Subscribe
                 </button>
               </div>
@@ -360,15 +407,6 @@
           </form>
         </div>
         <!-- Section: Form -->
-
-        <!-- Section: Text -->
-        <div class="mb-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum
-          </p>
-        </div>
-        <!-- Section: Text -->
 
         <!-- Section: Links -->
         <div class="links">
@@ -413,8 +451,8 @@
                   <a href="../cgv/cgv.html" class="text-white">CGV</a>
                 </li>
                 <li>
-                  <a href="../safety/safety.html" class="text-white"
-                    >Covid-19</a
+                  <a href="javascript:window.print();" class="text-white"
+                    >Print this page</a
                   >
                 </li>
               </ul>
@@ -444,7 +482,8 @@
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2022 The Parimis
+        © 2022 The Parimis - BB Site réalisé dans le cadre d'une formation
+        Ifocop
       </div>
       <!-- Copyright -->
     </footer>

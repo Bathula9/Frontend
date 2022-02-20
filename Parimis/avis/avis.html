@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avis</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../fav/site.webmanifest" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
 
     <!-- Custom CSS -->
@@ -19,17 +37,15 @@
   </head>
 
   <body>
-    <div class="container-lg logo py-3 d-flex">
-      <img
-        class="img-fluid img-thumbnail"
-        src="../images/logo.jpg"
-        alt="Logo"
-      />
-      <h1>Parimis</h1>
-    </div>
+    <header class="d-flex justify-content-end">
+      <div class="logo m-auto">
+        <img src="../images/4.png" alt="logo" />
+      </div>
+    </header>
+
     <!-- Navbar -->
     <div id="header" class="sticky-top">
-      <nav class="navbar navbar-expand-lg bg-white heading" id="navbar">
+      <nav class="navbar navbar-expand-lg heading" id="navbar">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -46,48 +62,81 @@
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../landingpage/lp.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../rooms.html">Rooms & Suites</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../restaurant.html">Restaurants</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../spa.html">Spa</a>
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="contactB.html"
+                  href="lp.html"
+                  id="navbarDropdown1"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Hôtel
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="../landingpage/lp.html"
+                    >Home</a
+                  >
+                  <a class="dropdown-item" href="../who/who.html"
+                    >Who are we?</a
+                  >
+                  <a class="dropdown-item" href="../resa/resa.html"
+                    >Reservations</a
+                  >
+                  <a class="dropdown-item" href="../avis/avis.html">Reviews</a>
+                  <a class="dropdown-item" href="../events/events.html"
+                    >Meetings & Events</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="rooms.html"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Contact Us
+                  Chambres
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="../contact/contactB.html"
-                    >Contact us</a
+                  <a class="dropdown-item" href="../rooms/rooms.html"
+                    >Chambres & Suites</a
                   >
-                  <a class="dropdown-item" href="../resa/resa.html"
-                    >Reservations</a
+                  <a class="dropdown-item" href="../Classic/classic.html"
+                    >Classique</a
                   >
-                  <a class="dropdown-item" href="../avis/avis.html">Avis</a>
-                  <a class="dropdown-item" href="../events/events.html"
-                    >Events</a
+                  <a class="dropdown-item" href="../comfort/comfort.html"
+                    >Comfort</a
                   >
-                  <a class="dropdown-item" href="../who/who.html"
-                    >Qui sommes-nous?</a
+                  <a class="dropdown-item" href="../deluxe/deluxe.html"
+                    >Deluxe</a
+                  >
+                  <a class="dropdown-item" href="../suites/suites.html"
+                    >Suite</a
                   >
                 </div>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="../restaurant/restaurant.html"
+                  >Restaurant</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../spa/spa.html">Spa</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link" href="../gallery/gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact/contactB.html"
+                  >Contact us</a
+                >
               </li>
             </ul>
 
@@ -115,22 +164,25 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+              <button class="btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
             </form>
           </div>
         </div>
       </nav>
     </div>
 
-    <!-- Avis -->
+    <!-- ***********Avis ****************** -->
 
     <section id="avis">
       <div id="avis-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h2>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-              quibusdam officiis delectus.
+              Wow. Exquisite, spacious, with balconies overlooking Avenue
+              Montaigne and the Eiffel Tower in the distance. The staff is
+              absolutely top-notch.
             </h2>
             <img
               class="avis-image"
@@ -141,8 +193,8 @@
           </div>
           <div class="carousel-item">
             <h2 class="testimonial-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-              autem quis nam. Quasi, consequatur soluta.
+              We stayed as part of my birthday celebration.The property is
+              gorgeous, immaculately maintained, and full of little discoveries
             </h2>
             <img
               class="avis-image"
@@ -153,8 +205,9 @@
           </div>
           <div class="carousel-item">
             <h2 class="testimonial-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-              autem quis nam. Quasi, consequatur soluta.
+              Parimis is simply the best of any hotel. I am welcomed from the
+              moment I step out of my car. the rooms are beautiful. We'll be
+              definitely back soon.
             </h2>
             <img
               class="avis-image"
@@ -201,91 +254,122 @@
       /></a>
     </div>
 
+    <!-- ***************** FORM **************** -->
 
-<!-- ***************** FORM **************** -->
-<div class="contact">
-<div class="container p-5">
-  <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
-              <form action="#">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <div class="form-group">
-                      <label for="lname" class="form-label">Last Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="lname"
-                        id="lname"
-                        placeholder="Enter your last name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="form-group">
-                      <label for="fname" class="form-label">First Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="fname"
-                        id="fname"
-                        placeholder="Enter your first name"
-                      />
-                    </div>
-                  </div>
+    <div class="container-fluid pls">
+      <h4 class="text-center p-1 mt-4">Please leave your reviews</h4>
+    </div>
 
-                  <!-- email -->
-                  <div class="col-md-6 mb-3">
-                    <div class="form-group">
-                      <label for="email" class="form-label"
-                        >Email address</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Enter your email address"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="form-group">
-                      <label for="period" class="form-label"
-                        >Period of stay</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="fname"
-                        id="period"
-                        placeholder="Entreprise"
-                      />
-                    </div>
-                  </div>
-                  
-                  </div>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <div class="form-group">
-                      <label for="message class="form-label">Leave your comments</label
-                      > <input
-                        type="text"
-                        class="form-control"
-                        name="fname"
-                        id="period"
-                        placeholder="Comments"
-                      />
-                      
-                    </div>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <button class="btn">Submit</button>
-                  </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="form">
+            <form action="#" class="mt-5 border p-3 shadow mb-4">
+              <!-- *****************1st row ********* -->
+              <div class="row">
+                <div class="mb-3 col-md-6">
+                  <label for="fName">First Name</label>
+                  <input
+                    type="text"
+                    name="fName"
+                    class="form-control"
+                    id="fName"
+                  />
                 </div>
-              </form>
-            </div>
+                <div class="mb-3 col-md-6">
+                  <label for="lName">Last Name</label>
+                  <input
+                    type="text"
+                    name="lName"
+                    class="form-control"
+                    id="lName"
+                  />
+                </div>
 
-    <!-- Footer -->
+                <!-- *****************2nd row ********* -->
+                <div class="mb-3 col-md-6">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    class="form-control"
+                    id="phone"
+                  />
+                </div>
+                <!-- ************3rd row************ -->
+                <div class="mb-3 col-md-6">
+                  <label for="adult">Number of adults</label>
+                  <input
+                    type="number"
+                    min="0"
+                    name="adult"
+                    class="form-control"
+                    id="adult"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label for="child">Number of children</label>
+                  <input
+                    type="number"
+                    min="0"
+                    name="child"
+                    class="form-control"
+                    id="child"
+                  />
+                </div>
+
+                <!-- *****************4th row ************** -->
+                <div class="mb-3 col-md-6">
+                  <label for="category">Category</label>
+                  <select name="category" id="category" class="effect">
+                    <option value="classic">Classic</option>
+                    <option value="comfort">Comfort</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suites</option>
+                  </select>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                  <label for="rate">Ratings</label>
+                  <select name="rate" id="rate" class="effect">
+                    <option value="five">5</option>
+                    <option value="four">4</option>
+                    <option value="three">3</option>
+                    <option value="two">2</option>
+                    <option value="one">1</option>
+                  </select>
+                </div>
+                <!-- ***************** 5th row **************** -->
+                <div class="mb-3 col-md-12">
+                  <label for="message">Leave your comments</label>
+                  <input
+                    type="text"
+                    name="message"
+                    class="form-control"
+                    id="message"
+                  />
+                </div>
+
+                <div class="mb-3 col-md-12 text-center read">
+                  <button class="btn mt-2">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *****************Footer ******************************-->
     <footer class="back text-center text-white">
       <!-- Grid container -->
       <div class="container p-4">
@@ -365,15 +449,6 @@
         </div>
         <!-- Section: Form -->
 
-        <!-- Section: Text -->
-        <div class="mb-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum
-          </p>
-        </div>
-        <!-- Section: Text -->
-
         <!-- Section: Links -->
         <div class="links">
           <!--Grid row-->
@@ -417,8 +492,8 @@
                   <a href="../cgv/cgv.html" class="text-white">CGV</a>
                 </li>
                 <li>
-                  <a href="../safety/safety.html" class="text-white"
-                    >Covid-19</a
+                  <a href="javascript:window.print();" class="text-white"
+                    >Print this page</a
                   >
                 </li>
               </ul>
@@ -448,7 +523,8 @@
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2022 The Parimis
+        © 2022 The Parimis - BB Site réalisé dans le cadre d'une formation
+        Ifocop
       </div>
       <!-- Copyright -->
     </footer>
