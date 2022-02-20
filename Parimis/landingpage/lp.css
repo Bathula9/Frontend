@@ -211,20 +211,11 @@ ul {
   letter-spacing: 2px;
 }
 
-/* *******MOBILE APP**********
-
-.title-image {
-  width: 30%;
-  /* transform: rotate(25deg); */
-/* position: absolute;
-} */
-
 /* Features */
 
 #features {
   padding: 7% 15%;
   background-color: #fff;
-  /* z-index: 1; */
   position: relative;
 }
 
@@ -236,10 +227,6 @@ ul {
 .icon {
   color: #d50032;
   margin-bottom: 1rem;
-}
-
-.icon:hover {
-  color: #f44c68;
 }
 
 /* *********** FIRST LETTER **************/

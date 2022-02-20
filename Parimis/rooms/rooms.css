@@ -9,19 +9,6 @@ body {
   padding: 0;
 }
 
-/* ul {
-  list-style: none;
-}
-
-p {
-  margin: 5px 0;
-  line-height: 1.7;
-}
-
-img {
-  max-width: 100%;
-} */
-
 /* navbar */
 /* ***** Top logo */
 .logo img {
@@ -38,7 +25,6 @@ img {
 .basket a {
   color: #000;
   text-decoration: none;
-  align-self: flex-end;
 }
 
 .navbar .nav-link {
@@ -113,8 +99,11 @@ ul {
   color: #fff;
 }
 
+/* ******* search button in white ********** */
+
 .d-flex .btn {
   padding: 5px;
+  color: #fff;
   border: 1px solid #d50032;
 }
 
@@ -124,28 +113,9 @@ ul {
   color: #fff;
 }
 
-/* *********** rooms buttons**********/
-.blurb .btn {
-  padding: 6px;
-  background-color: #d50032;
-  color: #fff;
-}
-
-.blurb .btn:hover {
-  padding: 6px;
-  background-color: #fff;
-  color: #d50032;
-  border: 2px solid #d50032;
-}
-
-.social .btn i:hover {
-  color: #d50032;
-}
-
 .form-control:focus {
   border-color: #d50032;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
-  /* box-shadow: none; */
 }
 
 #dropdownMenuButton:focus {
@@ -171,7 +141,26 @@ ul {
 .dropdown-toggle {
   color: #fff;
 }
+
+.dropdown-toggle:hover {
+  color: #fff;
+}
+/* ************ end of header ******************************/
 /* ***************************************** */
+
+/* *********** rooms buttons**********/
+.blurb .btn {
+  padding: 6px;
+  background-color: #d50032;
+  color: #fff;
+}
+
+.blurb .btn:hover {
+  padding: 6px;
+  background-color: #fff;
+  color: #d50032;
+  border: 2px solid #d50032;
+}
 
 /* *********** FIRST LETTER **************/
 
@@ -214,3 +203,9 @@ ul {
   color: #d50032;
   padding: 7px;
 }
+
+.social .btn i:hover {
+  color: #d50032;
+}
+
+/* *********** end of footer *************/

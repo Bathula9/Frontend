@@ -37,17 +37,17 @@
   </head>
 
   <body>
-    <header class="d-flex justify-content-center">
-      <div class="logo">
+    <header class="d-flex justify-content-end">
+      <div class="logo m-auto">
         <img src="../images/4.png" alt="logo" />
       </div>
-      <div class="basket">
+      <div class="basket mt-5 p-2">
         <a href="basket.html"><i class="fas fa-shopping-bag"></i> Panier</a>
       </div>
     </header>
 
     <!-- Navbar -->
-    <section id="header" class="sticky-top">
+    <div id="header" class="sticky-top">
       <nav class="navbar navbar-expand-lg heading" id="navbar">
         <div class="container-fluid">
           <button
@@ -69,7 +69,7 @@
                 <a
                   class="nav-link dropdown-toggle"
                   href="lp.html"
-                  id="navbarDropdown"
+                  id="navbarDropdown1"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-haspopup="true"
@@ -77,7 +77,7 @@
                 >
                   Hôtel
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                   <a class="dropdown-item" href="../landingpage/lp.html"
                     >Home</a
                   >
@@ -155,7 +155,9 @@
                 EN
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">FR</a>
+                <li>
+                  <a class="dropdown-item" href="#">FR</a>
+                </li>
               </ul>
             </div>
             <form class="d-flex">
@@ -172,7 +174,7 @@
           </div>
         </div>
       </nav>
-    </section>
+    </div>
 
     <!-- ***************** IMAGE - ROOM ************** -->
     <div class="col-12">
@@ -202,7 +204,9 @@
                 with rich colours, sumptuous fabrics and the Parisian opulence
                 you know and love.
               </p>
-              <button class="btn" type="submit">Discover</button>
+              <a href="../Classic/classic.html" target="_blank" class="mt-2 btn"
+                >Discover more</a
+              >
             </div>
           </div>
         </div>
@@ -220,7 +224,9 @@
                 right, marvel at the Eiffel Tower, the shining beacon at the
                 heart of Paris, and the glittering River Seine.
               </p>
-              <button class="btn" type="submit">Discover</button>
+              <a href="../comfort/comfort.html" target="_blank" class="mt-2 btn"
+                >Discover more
+              </a>
             </div>
           </div>
         </div>
@@ -245,7 +251,7 @@
         <div class="col-md-6 text-center order-1 order-md-2">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-              <h2>History</h2>
+              <h2>Deluxe</h2>
 
               <p class="lead">
                 As stately and enchanting as the hotel they inhabit, but full of
@@ -253,7 +259,9 @@
                 perfect balance of room sizes. Large enough for utter luxury,
                 but intimate enough to feel like home.
               </p>
-              <button class="btn" type="submit">Discover</button>
+              <a href="../deluxe/deluxe.html" target="_blank" class="mt-2 btn"
+                >Discover more</a
+              >
             </div>
           </div>
         </div>
@@ -269,7 +277,9 @@
                 iconic view of Paris. The ultimate experience, where memories
                 are made.
               </p>
-              <button class="btn" type="submit">Discover</button>
+              <a href="../suites/suites.html" target="_blank" class="mt-2 btn"
+                >Discover more</a
+              >
             </div>
           </div>
         </div>
@@ -283,7 +293,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- *****************Footer ******************************-->
     <footer class="back text-center text-white">
       <!-- Grid container -->
       <div class="container p-4">
@@ -363,15 +373,6 @@
         </div>
         <!-- Section: Form -->
 
-        <!-- Section: Text -->
-        <div class="mb-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum
-          </p>
-        </div>
-        <!-- Section: Text -->
-
         <!-- Section: Links -->
         <div class="links">
           <!--Grid row-->
@@ -415,8 +416,8 @@
                   <a href="../cgv/cgv.html" class="text-white">CGV</a>
                 </li>
                 <li>
-                  <a href="../print/print.html" class="text-white"
-                    >Imprimer la page</a
+                  <a href="javascript:window.print();" class="text-white"
+                    >Print this page</a
                   >
                 </li>
               </ul>
@@ -446,7 +447,8 @@
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2022 The Parimis
+        © 2022 The Parimis - BB Site réalisé dans le cadre d'une formation
+        Ifocop
       </div>
       <!-- Copyright -->
     </footer>
