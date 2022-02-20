@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -9,10 +9,21 @@ body {
   padding: 0;
 }
 
-/* navbar */
+/* ***** Top logo */
+.logo img {
+  height: 130px;
+  width: 150px;
+}
 
-#navbar {
-  margin-bottom: 150px;
+/* ****************** BASKET *****************/
+
+/* .d-flex {
+  flex-grow: 1;
+} */
+
+.basket a {
+  color: #000;
+  text-decoration: none;
 }
 
 .navbar .nav-link {
@@ -29,24 +40,15 @@ ul {
   list-style-type: none;
 }
 
-/* #navbar {
-  padding: 18px 15px;
-  box-shadow: 0 1px 3px rgb(0 0 0/10%), 0 2px 2px rgb(0 0 0/6%),
-    0 0 2px rgb(0 0 0/7%);
-  min-height: 12vh;
-  height: 0;
-} */
+#navbar {
+  background-color: #d50032;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23d54a6b' fill-opacity='0.4' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+}
 
 .navbar .navbar-brand a {
   padding: 16px 0;
   display: block;
   text-decoration: none;
-}
-
-.navbar-brand {
-  font-family: "Pacifico", sans-serif;
-  color: #d50032;
-  font-size: 30px;
 }
 
 .navbar-brand:hover,
@@ -84,25 +86,42 @@ ul {
   padding: 16px 10px;
   font-size: 19px;
   position: relative;
+  color: #fff;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  border-bottom: 3px solid #d50032;
+  border-bottom: 3px solid #fff;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:active {
-  border-bottom: 3px solid #d50032;
-  color: #d50032;
+  border-bottom: 3px solid #fff;
+  color: #fff;
 }
 
 .d-flex .btn {
   padding: 5px;
+  color: #fff;
   border: 1px solid #d50032;
 }
 
-.d-flex .btn:hover {
+.d-flex .btn:hover,
+.blurb .btn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* *********** rooms buttons**********/
+.blurb .btn {
+  padding: 6px;
   background-color: #d50032;
   color: #fff;
+}
+
+.blurb .btn:hover {
+  padding: 6px;
+  background-color: #fff;
+  color: #d50032;
+  border: 2px solid #d50032;
 }
 
 .social .btn i:hover {
@@ -121,36 +140,87 @@ ul {
   box-shadow: none;
 }
 
-/* ***** Top logo */
-.logo img {
-  height: 90px;
-  width: 90px;
+/* ***************** dropdown hover  **********/
+
+.dropdown a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
 }
 
-.logo h1 {
+.dropdown a:hover {
+  border-bottom: 3px solid #d50032;
+  background: none;
   color: #d50032;
-  font-family: "Pacifico", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  border: none;
-  outline: none;
+}
+
+.dropdown-toggle {
+  color: #fff;
+}
+/* ***************************************** */
+
+/* *********** FIRST LETTER **************/
+
+.blurb .lead {
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.blurb .lead::first-letter {
+  font-family: "Alex Brush", cursive;
+  color: #d50032;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 0.35em;
+}
+
+/* *******desc of rooms ****************/
+
+.blurb h2 {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* ******room desc - 3 ************ */
+
+#features {
+  padding: 3% 15% 0 15%;
+  background-color: #fff;
+  /* z-index: 1; */
+  position: relative;
+}
+
+.feature-box {
   text-align: center;
-  /* margin-top: -40px; */
+  padding: 4% 4% 0 4%;
 }
 
-.logo {
-  align-items: center;
-  justify-content: center;
+.icon {
+  color: #d50032;
+  margin-bottom: 1rem;
 }
 
-/*************** RESERVATION FORM ***********************/
+/* ****** footer ******/
 
-#resa {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/Gallery1.jpg");
-  background-size: cover;
-  background-position: center;
-  max-width: 350px;
-  border: 1px solid #ced4da;
-  margin: 10% auto 0;
+.back {
+  background-color: #d50032;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23d54a6b' fill-opacity='0.4' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.newsletter .effect {
+  background-color: #fff;
+  color: #d50032;
+  padding: 7px;
+}
+
+.newsletter .effect:hover {
+  background-color: #d50032;
+  color: #fff;
 }
