@@ -16,6 +16,17 @@ body {
   width: 150px;
 }
 
+/* ****************** BASKET *****************/
+
+/* .d-flex {
+  flex-grow: 1;
+} */
+
+.basket a {
+  color: #000;
+  text-decoration: none;
+}
+
 .navbar .nav-link {
   text-decoration: none;
   color: #000;
@@ -137,7 +148,23 @@ ul {
 /* ************ end of header ******************************/
 /* ***************************************** */
 
-/* *********** PRIVACY *******************/
+/* *********** PAY *******************/
+
+.pay {
+  padding: 5px;
+  color: #d50032;
+  border: 1px solid #d50032;
+}
+
+.pay:hover {
+  background-color: #d50032;
+  color: #fff;
+}
+
+.articles,
+.price {
+  border: 1px solid #000;
+}
 
 /* ****** footer ******/
 
