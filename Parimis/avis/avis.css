@@ -158,13 +158,16 @@ ul {
 
 #avis {
   text-align: center;
-  background-color: #8b75ee;
+  background-image: url("../images/bgavis.png");
+  background-size: cover;
   color: #000;
 }
 
 #press {
-  background-color: #ef8172;
+  /* background-color: #ef8172; */
   text-align: center;
+  background-image: url("../images/bgavis.png");
+  background-size: cover;
   padding-bottom: 3%;
 }
 

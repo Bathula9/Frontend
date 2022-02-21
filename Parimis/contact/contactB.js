@@ -1,8 +1,7 @@
 console.log("hi");
 
-$(function () {
-  $(document).scroll(function () {
-    let $nav = $("#mainNavbar");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-  });
+let button = document.querySelector(".btn1");
+
+button.addEventListener("click", function () {
+  alert("We will reply very soon");
 });
